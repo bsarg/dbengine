@@ -1,0 +1,17 @@
+[package]
+name = "dbengine"
+version = "0.1.0"
+edition = "2021"
+description = "Single-node teaching database: pages, buffer pool, B+Tree, SQL subset"
+
+[lib]
+name = "dbengine"
+path = "src/lib.rs"
+
+[[bin]]
+name = "dbengine"
+path = "src/bin/dbengine.rs"
+
+[[bin]]
+name = "bench"
+path = "src/bin/bench.rs"
